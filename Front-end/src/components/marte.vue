@@ -30,8 +30,8 @@ export default {
     },
      created: function(){
       axios.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY').then((dados)=>{
-        this.fotos = dados.data.photos[5].img_src
-        this.subtitle = dados.data.photos[5].camera.full_name
+        this.fotos = dados.data.photos[1].img_src
+        this.subtitle = dados.data.photos[1].camera.full_name
         console.log(this.subtitle)
       })
 },
